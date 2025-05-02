@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { useMotionValue, useMotionTemplate, animate, motion } from 'framer-motion';
 import Image from "next/image"
 import obj from '../public/next.svg';
-import profilepic from '../public/profilepic.jpg'; // Replace with the correct path to your image
+import profilepic from '../public/profilepic.jpg'; 
 import { FiArrowRight } from 'react-icons/fi';
 
 const COLOR_TOP = [
@@ -47,7 +47,7 @@ export const Hero = () => {
                 <span className='mb-1.5 inline-block rounded-full bg-gray-600/50 px-3 py-1.5 text-sm'>
                     Open For Intern
                 </span>
-                <h1 className='text-white/40 text-7xl font-black'>Hi There! 👋</h1>
+                <h1 className='text-white/40 text-7xl font-black'>Hi <span className='text-purple-400/40'>There!</span> 👋 Im</h1>
                 <h1 className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-transparent font-black leading-tight text-5xl md:text-7xl">
                     Naufal Ananta</h1>
 
@@ -59,29 +59,14 @@ export const Hero = () => {
                 />
 
                 <div className='flex bg-white/10 shadow-xl p-3 rounded-3xl justify-center items-center space-x-2 mb-4'>
-                    <Image
-                        src={obj}
-                        alt="Naufal Ananta"
-                        width={30}
-                        className='rounded-2xl mx-auto '
-                    />
-                    <Image
-                        src={obj}
-                        alt="Naufal Ananta"
-                        width={30}
-                        className='rounded-2xl mx-auto '
-                    />
-                    <Image
-                        src={obj}
-                        alt="Naufal Ananta"
-                        width={30}
-                        className='rounded-2xl mx-auto '
-                    />
+                  
                     <p className='font-medium'>Software Engineer</p>
                 </div>
 
-                <p className='my-6 max-w-xl text-center'>Frontend Developer based at Telkom University, passionate about building clean and interactive web interfaces.</p>
-                <motion.button
+                <p className='my-6 max-w-xl text-center'>Software Developer based at Telkom University, passionate about building clean and interactive web interfaces.</p>
+                <motion.a
+                    href="/CV_Naufal_Ananta.pdf" 
+                    download
                     style={{
                         border,
                         boxShadow: box,
@@ -92,11 +77,11 @@ export const Hero = () => {
                     whileTap={{
                         scale: 0.95,
                     }}
-                    className='flex w-fit items-center gap-2 rounded-full px-4 py-2'
+                    className='flex w-fit items-center gap-2 rounded-full px-4 py-2 text-white'
                 >
                     Download My CV
-                    <FiArrowRight></FiArrowRight>
-                </motion.button>
+                    <FiArrowRight />
+                </motion.a>
             </div>
 
             <div className='bg-circle-container'>

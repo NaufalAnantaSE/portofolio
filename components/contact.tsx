@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export const Contact = () => {
     return (
-        <section id="contact" className="py-32 text-white max-w-[1200px] mx-auto px-4">
+        <section id="contact" className="overflow-x-clip py-32 text-white max-w-[1200px] mx-auto px-4">
             <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -12,7 +12,6 @@ export const Contact = () => {
                 viewport={{ once: true }}
                 className="grid lg:grid-cols-2 gap-16"
             >
-                {/* Kiri: Info Kontak */}
                 <div className="space-y-12">
                     <motion.h2
                         initial={{ opacity: 0, y: -20 }}
@@ -20,7 +19,7 @@ export const Contact = () => {
                         transition={{ duration: 0.7, delay: 0.2 }}
                         className="text-5xl md:text-7xl font-bold text-gray-300"
                     >
-                        Get in <span className="text-gray-500">touch</span>
+                        Get in <span className="text-purple-500">touch</span>
                     </motion.h2>
 
                     <motion.div
@@ -34,13 +33,12 @@ export const Contact = () => {
                             <p className="text-sm text-gray-400">Phone</p>
                             <a
                                 href="https://api.whatsapp.com/send?phone=6285876947166&text=Hi%2C%20There%F0%9F%91%8B"
-                                className="text-xl font-medium hover:text-gray-200 transition"
+                                className="text-xl font-medium hover:text-purple-200 transition"
                             >
                                 +62 858 7694 7166
                             </a>
                         </div>
 
-                        {/* Kontak: Email */}
                         <div className="space-y-1">
                             <p className="text-sm text-gray-400">Email</p>
                             <a
@@ -51,7 +49,6 @@ export const Contact = () => {
                             </a>
                         </div>
 
-                        {/* Kontak: GitHub */}
                         <div className="space-y-1">
                             <p className="text-sm text-gray-400">GitHub</p>
                             <a
@@ -66,7 +63,6 @@ export const Contact = () => {
                     </motion.div>
                 </div>
 
-                {/* Kanan: Maps */}
                 <motion.div
                     initial={{ opacity: 0, x: 30 }}
                     whileInView={{ opacity: 1, x: 0 }}
