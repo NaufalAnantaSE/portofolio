@@ -4,7 +4,6 @@ import { Stacks } from "@/components/stacks";
 import {LogoAnimation} from "@/components/logoAnimation";
 import { Portfolio } from "@/components/portfolio";
 import { Contact } from "@/components/contact";
-import Image from "next/image";
 import { Footer } from "@/components/footer";
 
 export default function Home() {

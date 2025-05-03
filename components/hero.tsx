@@ -2,8 +2,7 @@
 import React, { useEffect } from 'react';
 import { useMotionValue, useMotionTemplate, animate, motion } from 'framer-motion';
 import Image from "next/image"
-import obj from '../public/next.svg';
-import profilepic from '../public/profilepic.jpg'; 
+import profilepic from '../public/profilepic.jpg';
 import { FiArrowRight } from 'react-icons/fi';
 
 const COLOR_TOP = [
@@ -27,7 +26,7 @@ export const Hero = () => {
             repeat: Infinity,
             repeatType: 'mirror',
         });
-    }, []);
+    }, [color]);
 
     const background = useMotionTemplate`
     radial-gradient(
@@ -59,13 +58,13 @@ export const Hero = () => {
                 />
 
                 <div className='flex bg-white/10 shadow-xl p-3 rounded-3xl justify-center items-center space-x-2 mb-4'>
-                  
+
                     <p className='font-medium'>Software Engineer</p>
                 </div>
 
                 <p className='my-6 max-w-xl text-center'>Software Developer based at Telkom University, passionate about building clean and interactive web interfaces.</p>
                 <motion.a
-                    href="/CV_Naufal_Ananta.pdf" 
+                    href="/CV_Naufal_Ananta.pdf"
                     download
                     style={{
                         border,
