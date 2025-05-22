@@ -42,12 +42,12 @@ body {
   transform: translate(-50%, -50%);
   width: 1000px;
   height: 1000px;
-  z-index: -999;
+  z-index: 0;
   pointer-events: none;
 }
 
 .bg-circle {
-  width: 100%;  
+  width: 100%;
   height: 100%;
   border-radius: 9999px;
   background: radial-gradient(circle at 30% 30%,
@@ -59,7 +59,7 @@ body {
     inset -40px -40px 100px rgba(0, 0, 0, 0.8),
     inset 30px 30px 80px rgba(100, 100, 100, 0.2),
     0 20px 60px rgba(0, 0, 0, 0.7);
-  z-index: -99;
+  z-index: -1;
 }
 
 .glass {
@@ -70,4 +70,3 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
-

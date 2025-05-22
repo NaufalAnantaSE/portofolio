@@ -13,9 +13,10 @@ export const metadata: Metadata = {
   title: "Naufal Portfolio",
   description: "Portfolio Naufal Ananta create with next app",
   icons: {
-    icon: "/fav.png",
+    icon: "/favicon.png", // ✅ Path ke file di folder /public
   },
 };
+
 
 
 export default function RootLayout({

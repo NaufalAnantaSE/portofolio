@@ -64,7 +64,7 @@ export const Hero = () => {
 
                 <p className='my-6 max-w-xl text-center'>Software Developer based at Telkom University, passionate about building clean and interactive web interfaces.</p>
                 <motion.a
-                    href="/CV-Naufal-Ananta.pdf"
+                    href="https://drive.google.com/file/d/1-tIPNJX4jy6Wxl6xfttmMxd1ztX4ue2L/view?usp=sharing"
                     download
                     style={{
                         border,
