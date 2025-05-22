@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Naufal Portfolio",
   description: "Portfolio Naufal Ananta create with next app",
   icons: {
-    icon: "/favicon.png", // ✅ Path ke file di folder /public
+    icon: "/favicon.ico",
   },
 };
 
