@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaReact } from 'react-icons/fa';
 import { IoLogoNodejs } from 'react-icons/io';
-import { SiTypescript, SiMongodb } from 'react-icons/si';
+import { SiTypescript, SiMongodb, SiNestjs } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
 
 
@@ -10,7 +10,8 @@ const stackItems = [
     { id: 2, name: 'Node.js', icon: IoLogoNodejs, color: '#339933' },
     { id: 3, name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
     { id: 4, name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
-    { id: 5, name: 'Next.js', icon: TbBrandNextjs, color: '#000000' },
+    { id: 5, name: 'Next JS', icon: TbBrandNextjs, color: '#000000' },
+    { id: 6, name: 'Nest JS', icon: SiNestjs, color: '#E0234E' }, 
 ];
 
 
@@ -20,7 +21,7 @@ export const Stacks = () => {
         <section id="stack" className='py-16 glass'>
             <div className='max-w-[1200px] mx-auto px-4 text-center'>
                 <h2 className='text-5xl text-gray-200 font-bold mb-5'>My Stacks</h2>
-                <div className='grid sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 gap-2'>
+                <div className='grid sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-6 gap-2'>
                     {stackItems.map((item) => (
                         <div
                             key={item.id}
