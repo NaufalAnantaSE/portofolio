@@ -65,6 +65,7 @@ export const Hero = () => {
                 <p className='my-6 max-w-xl text-center'>Software Developer based at Telkom University, passionate about building clean and interactive web interfaces.</p>
                 <motion.a
                     href="https://drive.google.com/file/d/1eg9psvlNUN61I-nigwrzQbxLvL2X_BQn/view?usp=sharing"
+                    target="_blank"
                     download
                     style={{
                         border,
